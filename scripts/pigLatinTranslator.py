@@ -10,11 +10,9 @@ class PigLatinTranslator:
             return self.word + "ay"
         elif self.word[:2] == "xr":
             return self.word + "ay"
+        elif self.word[:2] == "yt":
+            return self.word + "ay"
 
 
-pig1 = PigLatinTranslator("eye")
+pig1 = PigLatinTranslator("yttria")
 print(pig1.translate())
-
-
-pig2 = PigLatinTranslator("xray")
-print(pig2.translate())
