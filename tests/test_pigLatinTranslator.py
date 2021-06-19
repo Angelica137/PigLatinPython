@@ -6,6 +6,11 @@ def test_word_starts_w_vowel_ads_ay_at_end():
     assert pig.translate() == "eyeay"
 
 
-def test_word_starts_w_xr_returns_xrayay():
+def test_word_starts_w_xr_returns_worday():
     pig = PigLatinTranslator("xray")
     assert pig.translate() == "xrayay"
+
+
+def test_word_starts_w_yt_returns_worday():
+    pig = PigLatinTranslator("yttria")
+    assert pig.translate() == "yttriaay"
