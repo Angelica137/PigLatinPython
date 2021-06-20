@@ -19,3 +19,8 @@ def test_word_starts_w_yt_returns_worday():
 def test_word_starts_w_consonat_move_consonants_to_end():
     pig = PigLatinTranslator("chair")
     assert pig.translate() == "airchay"
+
+
+def test_starts_w_constonant_and_qu():
+    pig = PigLatinTranslator("square")
+    assert pig.translate() == "aresquay"
