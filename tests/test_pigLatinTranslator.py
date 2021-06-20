@@ -24,3 +24,13 @@ def test_word_starts_w_consonat_move_consonants_to_end():
 def test_starts_w_constonant_and_qu():
     pig = PigLatinTranslator("square")
     assert pig.translate() == "aresquay"
+
+
+def test_starts_w_consonants_follwed_by_y():
+    pig = PigLatinTranslator("rhythm")
+    assert pig.translate() == "ythmrhay"
+
+
+def test_my_returns_ymay():
+    pig = PigLatinTranslator("my")
+    assert pig.translate() == "ymay"

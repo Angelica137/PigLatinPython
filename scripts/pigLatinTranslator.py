@@ -13,8 +13,10 @@ class PigLatinTranslator:
                 return self.word + "ay"
             elif self.word[:2] == "yt":
                 return self.word + "ay"
-            elif self.word[char] == "q" and self.word[char + 1] == "u":
+            elif char > 0 and self.word[char] == "q" and self.word[char + 1] == "u":
                 qu = True
+                break
+            elif char > 0 and self.word[char] == "y":
                 break
             else:
                 consonants += self.word[char]
